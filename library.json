@@ -1,0 +1,42 @@
+{
+  "name": "LibModbusRTUMaster",
+  "version": "1.0.0",
+  "description": "Modbus RTU master for RS485 buses: blocking and non-blocking transactions, frame detection by the 3.5 character silence, CRC and response validation, and DE pin or callback control of the transceiver.",
+  "keywords": "modbus, modbus-rtu, rtu, rs485, master, serial, industrial",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jann-Electronics/LibModbusRTUMaster.git"
+  },
+  "authors": [
+    {
+      "name": "JojeNN97",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://jannelectronics.com",
+  "frameworks": "arduino",
+  "platforms": "*",
+  "headers": "ModbusRTUMaster.h",
+  "examples": [
+    {
+      "name": "Basic",
+      "base": "examples/basic",
+      "files": ["basic.cpp"]
+    },
+    {
+      "name": "Coils",
+      "base": "examples/coils",
+      "files": ["coils.cpp"]
+    },
+    {
+      "name": "Non-blocking",
+      "base": "examples/non_blocking",
+      "files": ["non_blocking.cpp"]
+    }
+  ],
+  "export": {
+    "exclude": [".pio", ".vscode"]
+  },
+  "dependencies": []
+}
